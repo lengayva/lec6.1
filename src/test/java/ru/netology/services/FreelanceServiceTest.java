@@ -5,16 +5,16 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FreelanceServiceTest {
+class FreelanceServiceCSVTest {
 
     @Test
     public void test1(){
         FreelanceService service = new FreelanceService();
 
         int actual = service.calculate(10_000, 3_000, 20_000);
-        int expended = 3;
+        int expected = 3;
 
-        Assertions.assertEquals(expended, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
